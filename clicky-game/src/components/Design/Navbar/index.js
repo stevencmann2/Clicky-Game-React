@@ -5,7 +5,7 @@ const Navbar = () => {
 return(
 
 
-<nav className="navbar navbar-expand-lg navbar-light bg-light text-center" >
+<nav className="navbar navbar-expand-lg navbar-light bg-light text-center">
     <ul>
     <li className="navbar-brand">
         Clicky Memory Game
@@ -23,8 +23,6 @@ return(
 );
 };
 
-const styles= {
-    display: 'inline-block'
-}
+
 
 export default Navbar;

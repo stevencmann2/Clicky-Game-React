@@ -1,20 +1,20 @@
 import React from 'react';
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-
+import {
+    Navbar, 
+    Footer, 
+    MemoryCard,
+} from "./components"
 
 
 const App = () => {
     return(
-        <React.Fragment>
-        <Navbar />
-        <div className="container">
-        
-        
-        
+        <div>
+            <Navbar />
+                <div className="container">
+                    <MemoryCard />
+                </div>
+            <Footer />
         </div>
-        <Footer />
-        </React.Fragment>
     )
 
 }
