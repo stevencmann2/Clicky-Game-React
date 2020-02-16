@@ -1,13 +1,18 @@
 import React from "react";
 
 const MemoryCard = ({
+    id,
     name,
-    bassImage
+    bassImage,
+    clickHandler
 })=> {
 
+
     return(
-        <div className="card m-3" style={styles.bassCard}>
-            <img className="card-img-top" src={bassImage} alt={name}></img>
+        <div className="col">
+            <div className="card m-3" style={styles.bassCard} onClick={()=> clickHandler(id)}>
+                <img className="card-img-top" src={bassImage} alt={name}></img>
+            </div>
         </div>
     )
 }
