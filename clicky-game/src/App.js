@@ -12,12 +12,14 @@ const App = () => {
 
     const [guitarsList, setGuitarsList]= useState(guitars);
     
-    const clickHandler = (id, guessed) => {
-        console.log(id, guessed)
-     
-        const filteredGuitars = guitarsList.filter(guitar => guitar.id===id )
-        setGuitarsList(filteredGuitars);
-    }
+ 
+      
+    // const handGuessed = (id) => {
+    //     console.log(id, guessed)
+        
+    //     const filteredGuitars = guitarsList.filter(guitar => guitar.id !== id)
+    //     setGuitarsList(filteredGuitars)
+    // }
   
     const randomize = (id) => {
         return Math.floor(Math.random() * Math.floor(13));
@@ -38,7 +40,7 @@ const App = () => {
                       name = {guitar.name}
                       bassImage = {guitar.image}
                       guessed = {guitar.guessed}
-                      clickHandler = {clickHandler}
+                      
                       
                     />
                   

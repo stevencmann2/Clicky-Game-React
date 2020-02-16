@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 const MemoryCard = ({
     id,
     name,
     bassImage,
-    clickHandler,
     guessed
 })=> {
 
+    const [prevClicked, setPrevClicked] =useState(guessed)
+
+    const handleGuessed = () => {
+        const confirmClicked = {guessed: true }
+        setPrevClicked(confirmClicked)
+    }
 
     return(
         <div className="col">
-            <div className="card m-3" style={styles.bassCard} onClick={()=> clickHandler(id, guessed)} >
+            <div className="card m-3" style={styles.bassCard} onClick={handleGuessed} >
                 <img className="card-img-top" src={bassImage} alt={name}></img>
             </div>
         </div>
