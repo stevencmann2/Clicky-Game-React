@@ -3,62 +3,74 @@
     {
         "id": 1,
         "name": "Precision Bass",
-        "image": "https://cdn.shopify.com/s/files/1/0002/7882/2974/products/Gallery1_30bd1023-57f7-4878-9449-503f746304c5_grande.jpg?v=1540377307"
+        "image": "https://cdn.shopify.com/s/files/1/0002/7882/2974/products/Gallery1_30bd1023-57f7-4878-9449-503f746304c5_grande.jpg?v=1540377307",
+        "guessed": true
     },
     {
         "id": 2,
         "name": "Jazz Bass",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSdzdKH-W4ahGx9g8J20MyCh_mtorF8-nQNksfsemrdz8wmW-2F"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSdzdKH-W4ahGx9g8J20MyCh_mtorF8-nQNksfsemrdz8wmW-2F",
+        "guessed": false
     },
     {
         "id": 3,
         "name": "Joe Dart Musicman Signature",
-        "image": "https://s3-us-west-2.amazonaws.com/static.music-man.com/website/images/instruments/instrument-80.png?1556121600"
+        "image": "https://s3-us-west-2.amazonaws.com/static.music-man.com/website/images/instruments/instrument-80.png?1556121600",
+        "guessed": false
     },
     {
         "id": 4,
         "name": "Lemmy Signature Rickenbacker",
-        "image": "https://external-preview.redd.it/RaIVbLOYqtyL6frPoG3jHctE9FOi5uSXgOs8CN4jUlQ.jpg?auto=webp&s=c4afc8cad994c45754657d7e8a132550a6c3324d"
+        "image": "https://external-preview.redd.it/RaIVbLOYqtyL6frPoG3jHctE9FOi5uSXgOs8CN4jUlQ.jpg?auto=webp&s=c4afc8cad994c45754657d7e8a132550a6c3324d",
+        "guessed": false
     },
     {
         "id": 5,
         "name": "Modulus Q6",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKCAbklgXZaBarqDb4-ktNL-ekuur4wGv4hwj7rxAhcgZup6Kt"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKCAbklgXZaBarqDb4-ktNL-ekuur4wGv4hwj7rxAhcgZup6Kt",
+        "guessed": false
     },
     {
         "id": 6,
         "name": "Victor Wooten Signature Fodera",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTV1581DPaMK451zqCWBBtq6pQRqm7AkxbTGhcizeZlr5LsPhLK"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTV1581DPaMK451zqCWBBtq6pQRqm7AkxbTGhcizeZlr5LsPhLK",
+        "guessed": false
     },
     {
         "id": 7,
         "name": "Big Brown Phil Lesh Alembic",
-        "image": "https://i.pinimg.com/originals/0b/8d/20/0b8d20859b30251eacc045ce10f5fc5b.jpg"
+        "image": "https://i.pinimg.com/originals/0b/8d/20/0b8d20859b30251eacc045ce10f5fc5b.jpg",
+        "guessed": false
     },
     {
         "id": 8,
         "name": "Jens Ritter Black Widow",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRN9KGLEzxXDCQfGPnKJUchGYBO8QoGbeWGLsKrcfUM1T8Zlo_-"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRN9KGLEzxXDCQfGPnKJUchGYBO8QoGbeWGLsKrcfUM1T8Zlo_-",
+        "guessed": false
     },
     {
         "id": 9,
         "name": "Ken Smith 5-string",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFgkejynt_tcv6ViB_q3pJOZ92UJ3KAIYYd1G0pEA7dEn1e5iV"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFgkejynt_tcv6ViB_q3pJOZ92UJ3KAIYYd1G0pEA7dEn1e5iV",
+        "guessed": false
     },
     {
         "id": 10,
         "name": "Gretsch Electromatic",
-        "image": "https://www.premierguitar.com/ext/resources/archives/9b6f4fac-23c6-4e86-9523-6a2ba91bcf08.JPG?1502216616"
+        "image": "https://www.premierguitar.com/ext/resources/archives/9b6f4fac-23c6-4e86-9523-6a2ba91bcf08.JPG?1502216616",
+        "guessed": false
     },
     {
         "id": 11,
         "name": "Gibson Thunderbird",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRS_qb8u0u2n2gy7wO_kYuBk_CD_gbiDopRirGzzjnfYmUvh2Ln"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRS_qb8u0u2n2gy7wO_kYuBk_CD_gbiDopRirGzzjnfYmUvh2Ln",
+        "guessed": false
     },
     {
         "id": 12,
         "name": "Gibson Les Paul",
-        "image": "https://cdn.shopify.com/s/files/1/0916/0836/products/44970_Gibson_Les_Paul_Junior_Tribute_DC_Bass_Worn_Brown_2019_115690084_2_jpg_d4dfd843-51e8-4689-976c-76af6e1097af_grande.jpg?v=1580165507"
+        "image": "https://cdn.shopify.com/s/files/1/0916/0836/products/44970_Gibson_Les_Paul_Junior_Tribute_DC_Bass_Worn_Brown_2019_115690084_2_jpg_d4dfd843-51e8-4689-976c-76af6e1097af_grande.jpg?v=1580165507",
+        "guessed": false
         
     }
     

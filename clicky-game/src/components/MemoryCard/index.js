@@ -4,13 +4,14 @@ const MemoryCard = ({
     id,
     name,
     bassImage,
-    clickHandler
+    clickHandler,
+    guessed
 })=> {
 
 
     return(
         <div className="col">
-            <div className="card m-3" style={styles.bassCard} onClick={()=> clickHandler(id)}>
+            <div className="card m-3" style={styles.bassCard} onClick={()=> clickHandler(id, guessed)} >
                 <img className="card-img-top" src={bassImage} alt={name}></img>
             </div>
         </div>
