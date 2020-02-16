@@ -1,16 +1,19 @@
 import React from "react";
 
-const MemoryCard = () => {
+const MemoryCard = ({
+    name,
+    bassImage
+})=> {
 
     return(
-        <div className="card" style={styles.bassCard}>
-            <img className="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFgkejynt_tcv6ViB_q3pJOZ92UJ3KAIYYd1G0pEA7dEn1e5iV" alt="Card image cap"></img>
+        <div className="card m-3" style={styles.bassCard}>
+            <img className="card-img-top" src={bassImage} alt={name}></img>
         </div>
     )
 }
 
 
-const styles ={
+const styles = {
     bassCard: {
         width: '18rem'
     },

@@ -1,4 +1,6 @@
-[{
+
+[
+    {
         "id": 1,
         "name": "Precision Bass",
         "image": "https://cdn.shopify.com/s/files/1/0002/7882/2974/products/Gallery1_30bd1023-57f7-4878-9449-503f746304c5_grande.jpg?v=1540377307"
@@ -16,7 +18,7 @@
     {
         "id": 4,
         "name": "Lemmy Signature Rickenbacker",
-        "image": "https://render.fineartamerica.com/images/rendered/default/metal-print/20.000/13.375/break/images/artworkimages/medium/1/lemmy-kilmister-rickenbacker-bass-guitar-lisa-johnson.jpg"
+        "image": "https://external-preview.redd.it/RaIVbLOYqtyL6frPoG3jHctE9FOi5uSXgOs8CN4jUlQ.jpg?auto=webp&s=c4afc8cad994c45754657d7e8a132550a6c3324d"
     },
     {
         "id": 5,
@@ -56,8 +58,8 @@
     {
         "id": 12,
         "name": "Gibson Les Paul",
-        "image": "https://images.gibson.com/Products/Electric-Guitars/2016/Memphis/ES-Les-Paul-Bass/BALP16FDNH1_MAIN_HERO_01.jpg"
+        "image": "https://images.gibson.com/Products/Electric-Guitars/2016/Memphis/ES-Les-Paul-name/BALP16FDNH1_MAIN_HERO_01.jpg"
         
     }
     
-]
+  ]
