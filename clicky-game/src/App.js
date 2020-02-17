@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Navbar, 
     Footer, 
@@ -20,10 +20,21 @@ const App = () => {
         }
         return array;
       }
+       
+    const [count, setCount] = useState(0);
     
-      
 
-  
+    const handleIncrement = (id) => {
+        const increase = count + 1;
+        if(increase === 2){
+            console.log('this ran correctly')
+            alert('game over')
+        }
+        setCount(increase);
+        console.log(increase)
+    };
+
+
    
     return(
         <div>
@@ -39,6 +50,7 @@ const App = () => {
                       id = {guitar.id}
                       name = {guitar.name}
                       bassImage = {guitar.image} 
+                      handleIncrement = {handleIncrement}
                     />
                   
                   ))}

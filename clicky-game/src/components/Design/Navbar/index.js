@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({
+    score, 
+    topScore
+}) => {
 
 return(
 
@@ -14,7 +17,7 @@ return(
         Begin by clicking any image
     </li>
     <li className="navbar-brand float-right">
-        Score:
+        Score: {score = 0} | Top Score: {topScore = 0}
     </li>
     </ul>
 </nav>
