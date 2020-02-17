@@ -29,8 +29,11 @@ const App = () => {
     const clickHandler = id => {
       
         const filteredGuitars = guitarsList.filter(guitar => guitar.id!==id)
+        // console.log(filteredGuitars)
         setGuitarsList(filteredGuitars)
-        
+        if(guitarsList.length== filteredGuitars.length){
+            console.log('clicked same thng twice')
+        }
     };
     
    
