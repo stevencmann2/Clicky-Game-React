@@ -22,7 +22,7 @@ const App = () => {
         return array;
       }
     
-      const [guitarsList, setGuitarsList]= useState(guitars);
+     
     
       const [clickedItems, setClickedItems] = useState([])
 
@@ -37,11 +37,7 @@ const App = () => {
         setClickedItems([id,...clickedItems])          
       } 
       
-    const clickHandler = id => { 
-        const filteredGuitars = guitarsList.filter(guitar => guitar.id!==id)
-        setGuitarsList(filteredGuitars)
-    };
-
+   
     
    
     return(
@@ -58,7 +54,7 @@ const App = () => {
                       id = {guitar.id}
                       name = {guitar.name}
                       bassImage = {guitar.image} 
-                      clickHandler = {clickHandler, checkHandler}
+                      checkHandler = {checkHandler}
                     
                     
                     />

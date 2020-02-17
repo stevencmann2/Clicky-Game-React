@@ -5,7 +5,7 @@ const MemoryCard = ({
     name,
     bassImage,
     id,
-    clickHandler,
+    checkHandler,
     
     
 })=> {
@@ -13,7 +13,7 @@ const MemoryCard = ({
 
     return(
         <div className="col" >
-            <div className="card m-3" style={styles.bassCard} onClick={()=>clickHandler(id)} >
+            <div className="card m-3" style={styles.bassCard} onClick={()=>checkHandler(id)} >
                 <img className="card-img-top" src={bassImage} alt={name}></img>
             </div>
         </div>
