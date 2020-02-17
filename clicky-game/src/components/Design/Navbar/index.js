@@ -9,17 +9,17 @@ return(
 
 
 <nav className="navbar navbar-expand-lg navbar-light bg-light text-center">
-    <ul>
-    <li className="navbar-brand">
-        Clicky Memory Game
-    </li>
-    <li className="navbar-brand">
+ 
+    <div className="col text-center">
+         Clicky Memory Game
+    </div>
+    <div className="col text-center">
         Begin by clicking any image
-    </li>
-    <li className="navbar-brand float-right">
-        Score: {score = 0} | Top Score: {topScore = 0}
-    </li>
-    </ul>
+    </div>
+    <div className="col text-center"  >
+        Score: {score} | Top Score: {topScore()} 
+    </div>
+   
 </nav>
 
 

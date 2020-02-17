@@ -22,43 +22,55 @@ const App = () => {
         return array;
       }
     
+      const [clickedItems, setClickedItems] = useState([]);
+      const [prevTopScore, setPrevTopScore]= useState(0);
+
      
+      
+      const topScoreHandler = () => {
+        const currentScore = clickedItems.length 
+        console.log(currentScore)
+        console.log(prevTopScore)
+        const newScore= ((currentScore > prevTopScore) ? currentScore : prevTopScore)
+        console.log(newScore)
+        setPrevTopScore(currentScore)
+
+      }
     
-      const [clickedItems, setClickedItems] = useState([])
 
       const GameOver = () => {
-          alert('GAme over')
+       alert('Game over')
+       
       }
+    
       
       const checkHandler = id =>{
+          console.log(clickedItems)
        if(clickedItems.includes(id)) {
+            
             GameOver();
         }    
-        setClickedItems([id,...clickedItems])          
-      } 
+        setClickedItems([id,...clickedItems])  
       
-   
+      } 
     
-   
     return(
         <div>
-             <Navbar />
+             <Navbar 
+             score={clickedItems.length}
+             topScore = {topScoreHandler}
+             />
                 
                 <Wrapper>
                 
                 {shuffle(guitars).map(guitar =>(
-
-
                     <MemoryCard
                       key={guitar.id}  
                       id = {guitar.id}
                       name = {guitar.name}
                       bassImage = {guitar.image} 
-                      checkHandler = {checkHandler}
-                    
-                    
-                    />
-                  
+                      checkHandler = {checkHandler}          
+                    /> 
                   ))}
                 </Wrapper>
             <Footer />
