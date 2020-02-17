@@ -24,16 +24,27 @@ const App = () => {
     
       const [guitarsList, setGuitarsList]= useState(guitars);
     
+      const [clickedItems, setClickedItems] = useState([])
       
+      const checkHandler = id =>{
+        console.log(clickedItems)
+          setClickedItems([id,...clickedItems])
+          console.log('hello')
+          
+      } 
       
     const clickHandler = id => {
       
         const filteredGuitars = guitarsList.filter(guitar => guitar.id!==id)
-        // console.log(filteredGuitars)
+        
         setGuitarsList(filteredGuitars)
-        if(guitarsList.length== filteredGuitars.length){
-            console.log('clicked same thng twice')
-        }
+        // if(guitarsList.length === filteredGuitars.length){
+        //     console.log('clicked same thng twice')
+        //     alert('Clicked twice')
+        //     setGuitarsList(guitars)
+        //     console.log(filteredGuitars)
+            
+        // }
     };
     
    
@@ -51,8 +62,9 @@ const App = () => {
                       id = {guitar.id}
                       name = {guitar.name}
                       bassImage = {guitar.image} 
-                      clickHandler = {clickHandler}
-                      
+                      clickHandler = {clickHandler, checkHandler}
+                    
+                    
                     />
                   
                   ))}

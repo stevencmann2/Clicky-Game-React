@@ -5,7 +5,9 @@ const MemoryCard = ({
     name,
     bassImage,
     id,
-    clickHandler
+    clickHandler,
+    
+    
 })=> {
  
 
