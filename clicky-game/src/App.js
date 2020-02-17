@@ -9,6 +9,7 @@ import guitars from './guitars.json'
 
 
 const App = () => {
+    
     const shuffle= (array) =>{
         let currentIndex = array.length, temporaryValue, randomIndex;
             while (0 !== currentIndex) {
@@ -20,21 +21,30 @@ const App = () => {
         }
         return array;
       }
-       
-    const [count, setCount] = useState(0);
     
-
-    const handleIncrement = (id) => {
-        const increase = count + 1;
-        if(increase === 2){
-            console.log('this ran correctly')
-            alert('game over')
+      const [guitarsList, setGuitarsList]= useState(guitars);
+    
+      
+      
+    const clickHandler = id => {
+      
+        const filteredGuitars = guitarsList.filter(guitar => guitar.id!==id)
+        for(let i=0; i< filteredGuitars.length; i++){
+            console.log(filteredGuitars[i].id)
+            console.log(id)
+            if(filteredGuitars[i].id === id){
+                console.log('alreadyslected')
+            }else{
+                console.log('not selected')
+            }
         }
-        setCount(increase);
-        console.log(increase)
+     
+        setGuitarsList(filteredGuitars)
+        console.log(filteredGuitars)
+
+        
     };
-
-
+    
    
     return(
         <div>
@@ -50,7 +60,8 @@ const App = () => {
                       id = {guitar.id}
                       name = {guitar.name}
                       bassImage = {guitar.image} 
-                      handleIncrement = {handleIncrement}
+                      clickHandler = {clickHandler}
+                      
                     />
                   
                   ))}

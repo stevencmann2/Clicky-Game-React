@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 
 const MemoryCard = ({
    
     name,
     bassImage,
     id,
-    handleIncrement
+    clickHandler
 })=> {
  
 
     return(
         <div className="col" >
-            <div className="card m-3" style={styles.bassCard} onClick={handleIncrement} >
-                <img className="card-img-top" src={bassImage} alt={name} id={id}></img>
+            <div className="card m-3" style={styles.bassCard} onClick={()=>clickHandler(id)} >
+                <img className="card-img-top" src={bassImage} alt={name}></img>
             </div>
         </div>
     )
