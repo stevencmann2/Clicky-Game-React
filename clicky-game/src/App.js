@@ -29,19 +29,7 @@ const App = () => {
     const clickHandler = id => {
       
         const filteredGuitars = guitarsList.filter(guitar => guitar.id!==id)
-        for(let i=0; i< filteredGuitars.length; i++){
-            console.log(filteredGuitars[i].id)
-            console.log(id)
-            if(filteredGuitars[i].id === id){
-                console.log('alreadyslected')
-            }else{
-                console.log('not selected')
-            }
-        }
-     
         setGuitarsList(filteredGuitars)
-        console.log(filteredGuitars)
-
         
     };
     
