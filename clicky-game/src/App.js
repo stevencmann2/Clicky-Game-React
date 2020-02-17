@@ -6,6 +6,7 @@ import {
     Wrapper,
 } from "./components";
 import guitars from './guitars.json'
+import lowEnd from './assets/images/bassFish.jpg'
 
 
 const App = () => {
@@ -62,7 +63,7 @@ const App = () => {
       } 
     
     return(
-        <div>
+        <div style={styles.backdrop}>
              <Navbar 
              textResult = {message}
              score = {clickedItems.length}
@@ -84,6 +85,14 @@ const App = () => {
         </div>
     )
 
+}
+
+
+const styles = {
+  backdrop: {
+      backgroundImage: `url(${lowEnd})`
+
+  }
 }
 
 
