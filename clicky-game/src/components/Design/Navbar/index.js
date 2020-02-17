@@ -2,7 +2,8 @@ import React from 'react';
 
 const Navbar = ({
     score, 
-    topScore
+    topScore,
+    textResult
 }) => {
 
 return(
@@ -14,10 +15,10 @@ return(
          Clicky Memory Game
     </div>
     <div className="col text-center">
-        Begin by clicking any image
+       {textResult} 
     </div>
     <div className="col text-center"  >
-        Score: {score} | Top Score: {topScore()} 
+        Score: {score} | Top Score: {topScore} 
     </div>
    
 </nav>

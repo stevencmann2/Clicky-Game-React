@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import {
     Navbar, 
     Footer, 
@@ -24,43 +24,50 @@ const App = () => {
     
       const [clickedItems, setClickedItems] = useState([]);
       const [prevTopScore, setPrevTopScore]= useState(0);
-
+      const [message, setMessage ]= useState('Begin by Clicking Any Image')
      
+      const textHandler = val => {
+        console.log(val)
+        const correct = "Correct! You're Hitting all the Right Notes";
+        const incorrect = "You're No Miles Davis, Click an Image to Start Again"
+       const resultMessage = (val ? correct : incorrect)
+       setMessage(resultMessage)
+        
+      }
       
       const topScoreHandler = () => {
         const currentScore = clickedItems.length 
-        console.log(currentScore)
-        console.log(prevTopScore)
         const newScore= ((currentScore > prevTopScore) ? currentScore : prevTopScore)
-        console.log(newScore)
-        setPrevTopScore(currentScore)
-
+        setPrevTopScore(newScore)
       }
     
-
       const GameOver = () => {
        alert('Game over')
-       
+       topScoreHandler()
+       setClickedItems([])
+
       }
-    
-      
+   
       const checkHandler = id =>{
           console.log(clickedItems)
        if(clickedItems.includes(id)) {
-            
-            GameOver();
+            textHandler(false)
+            return GameOver();
         }    
+        textHandler(true)
         setClickedItems([id,...clickedItems])  
+
+        
       
       } 
     
     return(
         <div>
              <Navbar 
-             score={clickedItems.length}
-             topScore = {topScoreHandler}
-             />
-                
+             textResult = {message}
+             score = {clickedItems.length}
+             topScore = {prevTopScore} 
+             /> 
                 <Wrapper>
                 
                 {shuffle(guitars).map(guitar =>(
