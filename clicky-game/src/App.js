@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import {
     Navbar, 
     Footer, 
@@ -8,6 +8,8 @@ import {
 } from "./components";
 import guitars from './guitars.json'
 import lowEnd from './assets/images/bassFish.jpg'
+import { Shake } from 'reshake'
+
 
 
 const App = () => {
@@ -28,6 +30,7 @@ const App = () => {
       const [prevTopScore, setPrevTopScore]= useState(0);
       const [message, setMessage ]= useState('Begin by clicking an image')
       const [textColor, setTextColor] = useState({color:'FFFFFF'})
+      const [shakeNow, setShakeNow] = useState(false)
      
       const textHandler = (val, color) => {
         const correctText = "Correct! You're hitting all the right notes";
@@ -38,8 +41,7 @@ const App = () => {
        const colorResult= (val ? correctColor : incorrectColor)
        setMessage(resultMessage)
        setTextColor(colorResult)
-       
-
+      setShakeNow(!val)
         
       }
       
@@ -50,10 +52,9 @@ const App = () => {
       }
     
       const GameOver = () => {
-       alert('Game over')
        topScoreHandler()
        setClickedItems([])
-
+      
       }
    
       const checkHandler = id =>{
@@ -63,9 +64,6 @@ const App = () => {
         }    
         textHandler(true)
         setClickedItems([id,...clickedItems])  
-
-        
-      
       } 
     
     return(
@@ -78,6 +76,7 @@ const App = () => {
 
              /> 
              <Jumbotron/>
+             <Shake active={shakeNow}>
                 <Wrapper>
                 
                 {shuffle(guitars).map(guitar =>(
@@ -90,6 +89,7 @@ const App = () => {
                     /> 
                   ))}
                 </Wrapper>
+                </Shake>
             <Footer />
         </div>
     )
