@@ -16,7 +16,7 @@ const App = () => {
     
     const shuffle= (array) =>{
         let currentIndex = array.length, temporaryValue, randomIndex;
-            while (0 !== currentIndex) {
+          while (0 !== currentIndex) {
                 randomIndex = Math.floor(Math.random() * currentIndex);
                 currentIndex -= 1;
           temporaryValue = array[currentIndex];
@@ -28,20 +28,20 @@ const App = () => {
     
       const [clickedItems, setClickedItems] = useState([]);
       const [prevTopScore, setPrevTopScore]= useState(0);
-      const [message, setMessage ]= useState('Begin by clicking an image')
+      const [message, setMessage ]= useState('Begin by clicking an image.')
       const [textColor, setTextColor] = useState({color:'FFFFFF'})
       const [shakeNow, setShakeNow] = useState(false)
      
       const textHandler = (val, color) => {
-        const correctText = "Correct! You're hitting all the right notes";
-        const incorrectText = "You're no Miles Davis, click an image to play again"
+        const correctText = "Correct! You're hitting all the right notes.";
+        const incorrectText = "Well you're no Miles Davis! Click any image to play again."
         const correctColor = {color: '#66ff33'}
         const incorrectColor = {color: '#ff3300'}
-       const resultMessage = (val ? correctText : incorrectText)
-       const colorResult= (val ? correctColor : incorrectColor)
-       setMessage(resultMessage)
-       setTextColor(colorResult)
-      setShakeNow(!val)
+        const resultMessage = (val ? correctText : incorrectText)
+        const colorResult= (val ? correctColor : incorrectColor)
+        setMessage(resultMessage)
+        setTextColor(colorResult)
+        setShakeNow(!val)
         
       }
       
@@ -52,8 +52,8 @@ const App = () => {
       }
     
       const GameOver = () => {
-       topScoreHandler()
-       setClickedItems([])
+        topScoreHandler()
+        setClickedItems([])
       
       }
    

@@ -10,19 +10,19 @@ const Navbar = ({
 return(
 
 <div className="row"> 
-<nav className="navbar navbar-expand-sm text-center text-light fixed-top py-3 mb-2" style={styles.navigation}>
+    <nav className="navbar navbar-expand-sm text-center text-light fixed-top py-3 mb-2" style={styles.navigation}>
  
-    <div className="col text-center">
-         Did you say bass or bass? I have a bad memory
-    </div>
-    <div className="col text-center" style={color}>
-       {textResult} 
-    </div>
-    <div className="col text-center"  >
-       Score: {score} Top Score: {topScore} 
-    </div>
+        <div className="col text-center">
+         Did you say bass or bass? I have a bad memory.
+        </div>
+        <div className="col text-center" style={color}>
+            {textResult} 
+        </div>
+        <div className="col text-center"  >
+             Score: {score} Top Score: {topScore} 
+        </div>
     
-</nav>
+    </nav>
 </div> 
 
 );
@@ -34,7 +34,7 @@ const styles={
         fontFamily: 'Fredoka One', 
         fontSize: '1.1em',
         textDecoration: 'none',
-        
+        boxShadow: '0 8px 6px -6px black'
         
     }
 }
