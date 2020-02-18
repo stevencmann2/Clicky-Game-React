@@ -1,9 +1,10 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState} from 'react';
 import {
     Navbar, 
     Footer, 
     MemoryCard,
     Wrapper,
+    Jumbotron
 } from "./components";
 import guitars from './guitars.json'
 import lowEnd from './assets/images/bassFish.jpg'
@@ -25,12 +26,12 @@ const App = () => {
     
       const [clickedItems, setClickedItems] = useState([]);
       const [prevTopScore, setPrevTopScore]= useState(0);
-      const [message, setMessage ]= useState('Begin by Clicking Any Image')
+      const [message, setMessage ]= useState('Begin by clicking an image')
      
       const textHandler = val => {
         console.log(val)
-        const correct = "Correct! You're Hitting all the Right Notes";
-        const incorrect = "You're No Miles Davis, Click an Image to Start Again"
+        const correct = "Correct! You're hitting all the right notes";
+        const incorrect = "You're no Miles Davis, click an image to play again"
        const resultMessage = (val ? correct : incorrect)
        setMessage(resultMessage)
         
@@ -69,6 +70,7 @@ const App = () => {
              score = {clickedItems.length}
              topScore = {prevTopScore} 
              /> 
+             <Jumbotron/>
                 <Wrapper>
                 
                 {shuffle(guitars).map(guitar =>(

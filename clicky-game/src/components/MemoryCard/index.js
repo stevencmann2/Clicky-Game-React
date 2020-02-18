@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const MemoryCard = ({
    
     name,
@@ -9,12 +10,13 @@ const MemoryCard = ({
     
     
 })=> {
- 
-
+  
+    
+   
     return(
-        <div className="col" >
-            <div className="card m-3" style={styles.bassCard} onClick={()=>checkHandler(id)} >
-                <img className="card-img-top" src={bassImage} alt={name}></img>
+        <div className="col mb-2 mt-2" >
+            <div className="card m-3" style={styles.bassCard} onClick={()=>checkHandler(id)}>    
+            <img className="img-fluid img-thumbnail" style={styles.image} src={bassImage} alt={name}></img>
             </div>
         </div>
     )
@@ -23,8 +25,16 @@ const MemoryCard = ({
 
 const styles = {
     bassCard: {
-        width: '18rem'
+        width: '233px',
+        // height: '166px',
+        
+        // marginBottom: '15px',
+        // marginRight: '15px' 
     },
+    
+   image: {
+       cursor: 'pointer'
+   }
 }
 
 
