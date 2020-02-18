@@ -23,7 +23,7 @@ Live deploy to Netlify : https://stevencmann2-clicky-game.netlify.com/
 
 * [React](https://reactjs.org/) - Frontend UI
 * [Reshake](https://elrumordelaluz.github.io/reshake/) - Image Shake Effect
-* [DEPLOYMENT](https://www.netlify.com/) - Used to deploy the application
+* [Netlify](https://www.netlify.com/) - Used to deploy the application
 
 
 ## Authors
