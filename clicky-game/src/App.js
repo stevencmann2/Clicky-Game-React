@@ -27,13 +27,19 @@ const App = () => {
       const [clickedItems, setClickedItems] = useState([]);
       const [prevTopScore, setPrevTopScore]= useState(0);
       const [message, setMessage ]= useState('Begin by clicking an image')
+      const [textColor, setTextColor] = useState({color:'FFFFFF'})
      
-      const textHandler = val => {
-        console.log(val)
-        const correct = "Correct! You're hitting all the right notes";
-        const incorrect = "You're no Miles Davis, click an image to play again"
-       const resultMessage = (val ? correct : incorrect)
+      const textHandler = (val, color) => {
+        const correctText = "Correct! You're hitting all the right notes";
+        const incorrectText = "You're no Miles Davis, click an image to play again"
+        const correctColor = {color: '#66ff33'}
+        const incorrectColor = {color: '#ff3300'}
+       const resultMessage = (val ? correctText : incorrectText)
+       const colorResult= (val ? correctColor : incorrectColor)
        setMessage(resultMessage)
+       setTextColor(colorResult)
+       
+
         
       }
       
@@ -51,7 +57,6 @@ const App = () => {
       }
    
       const checkHandler = id =>{
-          console.log(clickedItems)
        if(clickedItems.includes(id)) {
             textHandler(false)
             return GameOver();
@@ -69,6 +74,8 @@ const App = () => {
              textResult = {message}
              score = {clickedItems.length}
              topScore = {prevTopScore} 
+             color={textColor}
+
              /> 
              <Jumbotron/>
                 <Wrapper>

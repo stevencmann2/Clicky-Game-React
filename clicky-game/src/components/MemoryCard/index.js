@@ -25,7 +25,9 @@ const MemoryCard = ({
 
 const styles = {
     bassCard: {
-        width: '233px',
+        width: '200px',
+        boxShadow: '1px 1px',
+        boxShadow: '0 8px 6px -6px black'
         // height: '166px',
         
         // marginBottom: '15px',
